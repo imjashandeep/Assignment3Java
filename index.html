@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,500&display=swap" rel="stylesheet">
+
+    <title>Smoothie Order</title>
+</head>
+<body>
+	
+    <form id="smoothieForm">
+        <u><h1>Get your smoothie customize!</h1></u>
+        <b><label for="base">Select a base:</label></b>
+        <select id="base" name="base">
+            <option value="cream">Cream</option>
+            <option value="yogurt">Yogurt</option>
+            <option value="milk">Milk</option>
+            <option value="water">Water</option>
+        </select>
+
+       <b><label for="fruits">Select fruits:</label></b>
+		<input type="checkbox" name="fruits" value="watermelon"> Watermelon
+		<input type="checkbox" name="fruits" value="cherry"> Cherry
+		<input type="checkbox" name="fruits" value="avacado"> Avacado
+        <input type="checkbox" name="fruits" value="banana"> Banana
+        <input type="checkbox" name="fruits" value="strawberry"> Strawberry
+        <input type="checkbox" name="fruits" value="blueberry"> Blueberry
+
+        <b><label for="sweetener">Select a sweetener:</label></b>
+        <input type="radio" name="sweetener" value="honey"> Honey
+        <input type="radio" name="sweetener" value="sugar crystals"> Sugar Crystals
+		<input type="radio" name="sweetener" value="sugar syrup"> Sugar Syrup
+        <input type="radio" name="sweetener" value="none"> None
+
+        <button type="button" id="orderButton">Ready to get my Smmothie!</button>
+    </form>
+	
+    <div id="smoothieOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
